@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <title>Réservia</title>
+  </head>
+
+  <body>
+<!-- ----------------------------header------------------------------------- -->
+    <header>
+        <img src="images\logo\Reservia.svg" alt="Réservia" id="logo">
+        <nav>
+          <ul>
+            <li><a href="#hebergement" id="active">Hébergements</a></li>
+            <li><a href="#activites">Activités</a></li>
+            <li><a href="">S'inscrire</a></li>
+          </ul>
+        </nav>
+    </header>
+<!-- --------------------section formulaire de recherche-------------------- -->
+    <section id="formulaire">
+    <div class="form">
+      <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+      <h2>En plein centre ville ou en pleine nature</h2>
+      <div class="localisation">
+        <form action="" method="get" class="">
+          <i class="fas fa-map-marker-alt" id="logo-localisation"></i>
+          <input type="text" placeholder = "Marseille, France">
+          <input type="submit" name="rechercher" value ="Rechercher"></input>
+        </form>
+      </div>
+      <div class="filters">
+        <h2>Filtres</h2>
+        <div class="buttons">
+          <div class="economique">
+            <i class="fas fa-money-bill-wave"></i>
+            <input type="checkbox" id="economique" name="economique" value="economique">
+            <label for="economique">Economique</label>
+          </div>
+          <div class="familial">
+            <i class="fas fa-child"></i>
+            <input type="checkbox" id="familial" name="familial" value="familial">
+            <label for="familial">Familial</label>
+          </div>
+          <div class="romantique">
+            <i class="fas fa-heart"></i>
+            <input type="checkbox" id="romantique" name="romantique" value="romantique">
+            <label for="romantique">Romantique</label>
+          </div>
+          <div class="animaux">
+            <i class="fas fa-dog"></i>
+            <input type="checkbox" id="animaux" name="animaux" value="animaux">
+            <label for="animaux">Animaux</label>
+          </div>
+        </div>
+      </div>
+      <div class="info">
+        <i class="fas fa-info"></i>
+        <h3>Plus de 500 logments disponibles dans cette ville</h3>
+      </div>
+    </div>
+    </section>
+<!-- ----------------------section résultat hébergements-------------------- -->
+
+    <section id="hebergement">
+      <div class="result">
+        <div class="hebergement">
+          <h2>Hébergements à Marseille</h2>
+          <div class="annonces, annoncesLogement">
+            <img href="" src="images\hebergements\4_small\marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière">
+            <img href="" src="images\hebergements\4_small\fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">
+            <img href="" src="images\hebergements\4_small\reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel les mouettes">
+            <img href="" src="images\hebergements\4_small\annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer">
+            <img href="" src="images\hebergements\4_small\nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier">
+            <img href="" src="images\hebergements\4_small\febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez amina">
+          </div>
+          <a href="#">Afficher plus</a>
+        </div>
+      <aside>
+        <div class="annonces, annoncesPopulaires">
+          <h2>Les plus populaires</h2>
+          <img href="" src="images\hebergements\4_small\emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le Soleil du Matin">
+          <img href="" src="images\hebergements\4_small\aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau Chambres d'hôtes">
+          <img href="" src="images\hebergements\4_small\febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et Blanc">
+        </div>
+      </aside>
+    </div>
+  </section>
+    <!-- -----------------section résultat activités------------------------ -->
+
+    <section id="activites">
+      <h2>Activités à Marseille</h2>
+      <div class="annonces, annoncesActivites">
+        <img href="" src="images\activites\4_small\reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port" class="large">
+        <img href="" src="images\activites\4_small\paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues" class="medium">
+        <img href="" src="images\activites\4_small\kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Iles du Frioul" class="small">
+        <img href="" src="images\activites\4_small\kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques" class="large">
+        <img href="" src="images\activites\4_small\florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Guarde" class="small">
+        <img href="" src="images\activites\4_small\lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamps" class="medium">
+      </div>
+    </section>
+    <!-- --------------------------footer----------------------------------- -->
+
+    <footer>
+      <div>
+        <ul>
+          <li><h3>A propos</h3></li>
+          <li><a href="#">Fonctionnement du site</a></li>
+          <li><a href="#">Conditions générales de vente</a></li>
+          <li><a href="#">Données et confidentialité</a></li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li><h3>Nos hébergements</h3></li>
+          <li><a href="#">Charte qualité</a></li>
+          <li><a href="#">Soumettre votre hôtel</a></li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li><h3>Assistance</h3></li>
+          <li><a href="#">Centre d'aide</a></li>
+          <li><a href="#">Nous contacter</a></li>
+        </ul>
+      </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,183 @@
+/* div {
+  border : 1px solid red;
+}
+/* ---------------------
+
+bleu : #0065FC
+clair : #DEEBFF
+gris : #F2F2F2
+
+   ------------------------*/
+
+/*GENERAL*/
+*{
+  font-family: 'Raleway', sans-serif;
+}
+h1{
+  font-size: 16px;
+  font-weight: bold;
+  font-weight: bolder;
+}
+h2{
+  font-size: 12px;
+}
+h3{
+  font-size: 11px;
+}
+li{
+  list-style-type: none;
+  }
+a{
+  font-size: 12px;
+  text-decoration: none;
+}
+#logo{
+  width: auto;
+  height: 50px;
+}
+nav a:after{
+  text-decoration: none;
+}
+nav ul li:last-child{
+  font-weight: bold;
+  color: #0065FC;
+}
+Body{
+  margin : 0;
+  padding : 50px;
+  margin-left: 50px
+  }
+img{
+   box-shadow: 1px 1px 6px #ccc;
+  }
+/*HEADER*/
+nav{
+  display: flex;
+  justify-content: end;
+}
+nav ul{
+  display: flex;
+  align-self: flex-end;
+  weight : 118px;
+}
+nav ul a{
+  font-size: 14px;
+}
+#active{
+  color: #0065FC;
+  border-top: 3px solid #0065FC;
+  margin-top: 0px;
+}
+
+header{
+  width : auto;
+  weight : 118px;
+  display : flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header a{
+  font-size: 20px;
+  padding : 20px;
+}
+header a:hover{
+  color : blue;
+}
+header img{
+  width : 150px;
+}
+
+/*SECTION FORM*/
+div .info{
+  display : flex;
+}
+a:hover{
+  width: 10%;
+}
+.fas{
+  border: 2px solid silver;
+  padding : 10px 10px;
+  color : #0065FC;
+  border-radius : 100px;
+  background-color: #DEEBFF;
+}
+div .filters, div .filters>div{
+  display: flex;
+  flex-direction : row;
+}
+.filters div{
+  margin-left: 20px;
+}
+
+/*SECTION RESULT*/
+.result{
+  display:grid;
+  grid-template-columns : 2fr 1fr;
+  grid-column-gap : 40px;
+}
+.result img{
+  width: 341px;
+  height: 145px;
+  border-radius: 20px;
+  border: 5px solid #FFFF;
+  border-spacing: 30px;
+  object-fit: cover;
+}
+#hebergement{
+  width: 100%;
+}
+.hebergement, .annoncesPopulaires{
+  padding: 40px 40px;
+  background-color: #F2F2F2;
+  border-radius: 20px;
+}
+.annoncesLogement img{
+  width: 245px;
+  height: 200px;
+  border-spacing: 30px;
+}
+.annoncesLogement{
+  display:grid;
+  grid-template: 50% 50% / 1fr 1fr 1fr;
+  grid-area: 1 / 1 / 3 / 4;
+  grid-gap: 30px;
+}
+
+/*activités*/
+div.activites{
+  /*display: grid;
+  grid-template-columns: 25% 25% 25% 25%;*/
+  display: flex;
+  flex-direction: column;
+/*  flex-flow: wrap;*/
+
+}
+#activites img{
+  border-radius: 20px;
+  width: 300px;
+}
+#activites img.small{
+  height: 104px;
+}
+#activites img.medium{
+  height: 237px;
+}
+#activites img.large{
+  height: 445px;
+}
+
+/*FOOTER*/
+footer{
+  display: flex;
+  background-color: #F2F2F2;
+}
+footer div{
+  display: grid;
+  justify-content: flex-start;
+  width : 33%;
+}
+footer a{
+  text-decoration: none;
+  text-transform: none;
+}
