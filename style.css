@@ -1,7 +1,11 @@
-/* div {
+/**div {
   border : 1px solid red;
 }
-/* ---------------------
+
+header{
+border : 1px solid black;
+}
+ ---------------------
 
 bleu : #0065FC
 clair : #DEEBFF
@@ -14,21 +18,22 @@ gris : #F2F2F2
   font-family: 'Raleway', sans-serif;
 }
 h1{
-  font-size: 16px;
-  font-weight: bold;
-  font-weight: bolder;
+  font-size: 22px;
+  font-weight: 800;
 }
-h2{
-  font-size: 12px;
+h2, label{
+  font-size: 16px;
+  font-weight: 800;
 }
 h3{
   font-size: 11px;
+  margin-top: 3px;
+  font-weight: 500;
 }
 li{
   list-style-type: none;
   }
 a{
-  font-size: 12px;
   text-decoration: none;
 }
 #logo{
@@ -43,13 +48,24 @@ nav ul li:last-child{
   color: #0065FC;
 }
 body{
-  margin : 0;
-  padding : 50px;
-  margin-left: 50px;
+  margin : 0 auto;
+  max-width : 1440px;
   }
-#hebergement #activites img{
+body h2{
+  font-weight: bold;
+}
+div .annonce{
    box-shadow: 1px 1px 6px #ccc;
   }
+/* i.fas.fa-star.grey {
+    color: #F2F2F2;
+  } */
+*.fas:not(#logoLocalisation, #logoArrow, .grey){
+    color : #0065FC;
+}
+.grey{
+  color: #F2F2F2;
+}
 /*HEADER*/
 nav{
   display: flex;
@@ -71,7 +87,7 @@ nav ul a{
 
 header{
   width : auto;
-  weight : 118px;
+  height : 118px;
   display : flex;
   justify-content: space-between;
   align-items: center;
@@ -95,11 +111,60 @@ div .info{
 a:hover{
   width: 10%;
 }
-*.fas:not(#logoLocalisation, #logoArrow){
-  color : #0065FC;
+
+.formBar{
+  border : 1px solid  #F2F2F2;
+  border-radius: 10px;
+  max-width: 400px;
+  min-height: 40px;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 12% 55% 33%;
+  grid-row: 1;
 }
-{
-  color: #0000;
+
+.bidule{
+  background-color: #F2F2F2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  border-radius: 10px 0px 0px 10px;
+}
+.checkmark{
+  border-radius: 50%;
+  background-color: #DEEBFF;
+}
+.place{
+  margin: center;
+  display: flex;
+  justify-content: center;
+
+}
+.search{
+  min-height: 100%;
+  background-color: #0065FC;
+  display: flex;
+  justify-content: center;
+  border-radius: 0px 10px 10px 0px;
+}
+.text{
+  display: flex;
+  flex-direction: column;
+  border: none;
+  font-size: 16px;
+}
+
+.submit{
+  border: none;
+  background-color: #0065FC;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#logoLocalisation, #logoArrow{
+  color: #000000;
 }
 div .filters, div .filters>div{
   display: flex;
@@ -123,11 +188,7 @@ div .filters, div .filters>div{
   grid-column-gap : 40px;
 }
 .result img{
-  width: 100%;
-  height: 145px;
-  border-radius: 20px;
-  border: 5px solid #FFFF;
-  border-spacing: 30px;
+  max-height: 145px;
   object-fit: cover;
 }
 #hebergement{
@@ -141,69 +202,148 @@ div .filters, div .filters>div{
 .annoncesLogement img{
   width: 100%;
   height: 200px;
-  border-spacing: 30px;
+  border-radius: 20px 20px 0px 0px;
 }
-.annoncesLogement, div[class="descritpion"]{
-  display:grid;
-  grid-template: 50% 50% / 1fr 1fr 1fr;
-  grid-area: 1 / 1 / 3 / 4;
-  grid-gap: 30px;
+.annoncesPopulaires img{
+  width: 100%;
+  height: 140px;
+  border-radius: 20px 0px 0px 20px;
+}
+.annonce > .annoncesPopulaires{
+    max-height: 150px;
 }
 
-div[class="descritpion"]{
+
+.description{
   display: flex;
-  width: 100%;
-  height: 80px;
-  background-color: #FFFF;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  border-spacing: 30px;
-  padding: 17px;
+  flex-direction: column;
+  align-content: space-between;
+  max-width: 200px;
+  padding: 0px 17px 17px 17px;
+  max-height: 100%;
 }
-div[class="stars"]{
+
+#hebergement .annonce{
+    padding: 5px;
+    background: #FFFF;
+    border-radius: 20px;
+    min-width: 100%;
+}
+.stars{
   display : flex;
   flex-direction: row;
   width: 68px;
+  align-items: baseline;
 }
-/*.stars *{
-  color: #0065FC;
-}*/
-._4stars i:last-child{
-  color: #F2F2F2;
-}
-._3stars i:nth-of-type(n+4){
-  color: #F2F2F2;
-}
+
 .headPop{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  /* margin-bottom: 30px; */
+}
+
+.annoncesLogement{
+  display : grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 30px;
+  grid-gap: 30px;
+}
+.annoncesLogement > .annonce{
+  max-height: auto;
+  min-width: 150px;
+  max-width: 300px;
+}
+.annoncesPopulaires > .annonce{
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-column-gap: 10px;
   margin-bottom: 30px;
 }
 
-/*activités*/
-
-div.activites{
-  /*display: grid;
-  grid-template-columns: 25% 25% 25% 25%;*/
+/* div.annoncesPopulaires{
   display: flex;
   flex-direction: column;
-/*  flex-flow: wrap;*/
+  align-items: center;
+  flex-flow: wrap;
+  align-content: space-around;
+} */
 
+/*activités*/
+
+div.annoncesActivites{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 190px 40px 40px 165px;
+  grid-column-gap: 40px;
+}
+.annoncesActivites > .annonce{
+  overflow:hidden;
+  background: #FFFF;
+  border-radius: 20px;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: auto;
+  padding-bottom: 60px;
+}
+.annonce1{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+.annonce2{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.annonce3{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+.annonce4{
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+.annonce5{
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.annonce6{
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+#activites{
+  width: 100%;
+  margin-bottom: 60px;
 }
 #activites img{
-  border-radius: 20px;
-  width: 300px;
+  border-radius: 20px 20px 0px 0px;
+  object-fit: cover;
 }
-#activites img.small{
-  height: 104px;
+.large{
+  max-height: 100%;
+  width: auto;
 }
-#activites img.medium{
-  height: 237px;
+.small{
+  max-height: 100%;
+  width: 100%;
 }
-#activites img.large{
-  height: 445px;
+.descriptionActivite{
+  height: 60px;
 }
 
 /*FOOTER*/
@@ -216,7 +356,8 @@ footer div{
   justify-content: flex-start;
   width : 33%;
 }
-footer a{
+footer a, footer a:after{
+  font-size: 10px;
   text-decoration: none;
   text-transform: none;
 }
