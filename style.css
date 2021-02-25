@@ -18,23 +18,24 @@ gris : #F2F2F2
   font-family: 'Raleway', sans-serif;
 }
 h1{
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 800;
 }
 h2, label{
-  font-size: 16px;
-  font-weight: 800;
+  font-size: 18px;
+  font-weight: bold;
 }
 h3{
-  font-size: 11px;
+  font-size: 15px;
   margin-top: 3px;
   font-weight: 500;
 }
 li{
   list-style-type: none;
   }
-a{
+a, a:visited{
   text-decoration: none;
+  color: inherit;
 }
 #logo{
   width: auto;
@@ -77,7 +78,7 @@ nav ul{
   min-height: 118px;
 }
 nav ul a{
-  font-size: 14px;
+  font-size: 18px;
 }
 #active{
   color: #0065FC;
@@ -94,6 +95,7 @@ header{
 }
 
 header a{
+  margin: 10px;
   font-size: 20px;
   padding : 20px;
 }
@@ -111,12 +113,15 @@ div .info{
 a:hover{
   width: 10%;
 }
-
+form{
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
 .formBar{
   border : 1px solid  #F2F2F2;
   border-radius: 10px;
   max-width: 400px;
-  min-height: 40px;
+  height: 50px;
   align-items: center;
   display: grid;
   grid-template-columns: 12% 55% 33%;
@@ -132,8 +137,20 @@ a:hover{
   border-radius: 10px 0px 0px 10px;
 }
 .checkmark{
-  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
   background-color: #DEEBFF;
+  padding: 15px 10px 2px 10px;
+  text-align: center;
+}
+.button{
+  border: 2px solid #F2F2F2;
+  border-left: none;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
 }
 .place{
   margin: center;
@@ -228,14 +245,32 @@ div .filters, div .filters>div{
     background: #FFFF;
     border-radius: 20px;
     min-width: 100%;
+    min-height: 100%;
 }
-.stars{
+.hebergement .stars{
   display : flex;
   flex-direction: row;
   width: 68px;
   align-items: baseline;
+  padding-left: 17px;
+  padding-bottom: 17px;
 }
-
+/* .annoncesPopulaires .description{
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  max-width: 200px;
+  padding: 0px 17px 17px 17px;
+  max-height: 100%;
+}*/
+.annoncesPopulaires .stars{
+  display : flex;
+  flex-direction: row;
+  width: 68px;
+  align-items: baseline;
+  /* padding-left: 17px;
+  padding-bottom: 17px; */
+}
 .headPop{
   display: flex;
   flex-direction: row;
@@ -258,8 +293,30 @@ div .filters, div .filters>div{
 .annoncesPopulaires > .annonce{
   display: grid;
   grid-template-columns: 40% 60%;
-  grid-column-gap: 10px;
+  grid-auto-rows: 80% 20%;
   margin-bottom: 30px;
+  width: 100%;
+  max-height: 145px;
+}
+.annoncesPopulaires img{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.annoncesPopulaires .description{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.annoncesPopulaires .stars{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  position: relative;
+  bottom: 17px;
 }
 
 /* div.annoncesPopulaires{
@@ -326,6 +383,14 @@ div.annoncesActivites{
   grid-row-start: 3;
   grid-row-end: 5;
 }
+.descriptionActivite{
+  width: 100%;
+  height: auto;
+}
+.descriptionActivite h2{
+  margin: 6%;
+}
+
 #activites{
   width: 100%;
   margin-bottom: 60px;
@@ -356,8 +421,13 @@ footer div{
   justify-content: flex-start;
   width : 33%;
 }
-footer a, footer a:after{
-  font-size: 10px;
-  text-decoration: none;
+footer h2{
+  margin-bottom: 20px;
+}
+footer a{
+  font-size: 16px;
   text-transform: none;
+}
+footer li{
+  margin-bottom: 10px;
 }
