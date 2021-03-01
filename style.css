@@ -1,7 +1,7 @@
-/**div {
+nav {
   border : 1px solid red;
 }
-
+/*
 header{
 border : 1px solid black;
 }
@@ -21,13 +21,16 @@ h1{
   font-size: 24px;
   font-weight: 800;
 }
-h2, label{
+h2{
+  font-size: 18px;
+}
+
+label{
   font-size: 18px;
   font-weight: bold;
 }
 h3{
   font-size: 15px;
-  margin-top: 3px;
   font-weight: 500;
 }
 li{
@@ -37,9 +40,18 @@ a, a:visited{
   text-decoration: none;
   color: inherit;
 }
+header{
+  margin : 2px auto;
+  max-width : 1440px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 #logo{
   width: auto;
   height: 50px;
+  padding-top: 30px;
+  padding-bottom: 20px;
 }
 nav a:after{
   text-decoration: none;
@@ -52,56 +64,56 @@ body{
   margin : 0 auto;
   max-width : 1440px;
   }
+#activites{
+    max-width: 1440px;
+    margin-bottom: 60px;
+  }
 body h2{
   font-weight: bold;
 }
 div .annonce{
    box-shadow: 1px 1px 6px #ccc;
   }
-/* i.fas.fa-star.grey {
-    color: #F2F2F2;
-  } */
+
 *.fas:not(#logoLocalisation, #logoArrow, .grey){
     color : #0065FC;
 }
 .grey{
   color: #F2F2F2;
 }
+::placeholder{
+  color: black;
+  font-weight: 700;
+  font-size: 18px;
+}
 /*HEADER*/
+
 nav{
-  display: flex;
-  justify-content: end;
+  width: 420px;
 }
 nav ul{
   display: flex;
-  align-self: flex-end;
-  min-height: 118px;
+  margin-top: 10px;
+  width: 420px;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 nav ul a{
   font-size: 18px;
+  padding-left : 28px;
+  padding-right: 28px;
+  padding-top: 40px;
+}
+header a:hover{
+  color : blue;
 }
 #active{
   color: #0065FC;
   border-top: 3px solid #0065FC;
   margin-top: 0px;
+  padding-top: 40px;
 }
 
-header{
-  width : auto;
-  height : 118px;
-  display : flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header a{
-  margin: 10px;
-  font-size: 20px;
-  padding : 20px;
-}
-header a:hover{
-  color : blue;
-}
 header img{
   width : 150px;
 }
@@ -136,27 +148,33 @@ form{
   min-height: 100%;
   border-radius: 10px 0px 0px 10px;
 }
-.checkmark{
-  width: 30px;
-  height: 30px;
-  border-radius: 100px;
-  background-color: #DEEBFF;
-  padding: 15px 10px 2px 10px;
-  text-align: center;
-}
 .button{
   border: 2px solid #F2F2F2;
   border-left: none;
-  height: 44px;
+  height: 48px;
   display: flex;
   align-items: center;
-  padding-right: 20px;
+  margin-left: 25px;
+  padding-right: 15px;
 }
+.rondBleu{
+  display: flex;
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  background-color: #DEEBFF;
+  text-align: center;
+  justify-content: space-around;
+  padding-left: 0px;
+}
+.button:hover{
+  transform: scale(1.1);
+}
+
 .place{
   margin: center;
   display: flex;
   justify-content: center;
-
 }
 .search{
   min-height: 100%;
@@ -169,7 +187,11 @@ form{
   display: flex;
   flex-direction: column;
   border: none;
-  font-size: 16px;
+  margin: 0;
+}
+.text h3, .text h2{
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 
 .submit{
@@ -191,13 +213,29 @@ div .filters, div .filters>div{
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-left: 20px;
 }
 .buttons > div{
   border-color: 1px solid silver;
-  border-radius: 20px;
+  border-radius: 50px;
 }
-
+.info{
+  display: flex;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+.rondInfo{
+  display: flex;
+  width: 26px;
+  height: 26px;
+  border-radius: 50px;
+  border: 1px solid black;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+}
 /*SECTION RESULT*/
 .result{
   display:grid;
@@ -209,7 +247,10 @@ div .filters, div .filters>div{
   object-fit: cover;
 }
 #hebergement{
-  width: 100%;
+  width: 1440px;
+}
+#hebergement h2{
+  font-size: 16px;
 }
 .hebergement, .annoncesPopulaires{
   padding: 40px 40px;
@@ -219,64 +260,30 @@ div .filters, div .filters>div{
 .annoncesLogement img{
   width: 100%;
   height: 200px;
-  border-radius: 20px 20px 0px 0px;
+  border-radius: 18px 18px 0px 0px;
 }
 .annoncesPopulaires img{
   width: 100%;
   height: 140px;
-  border-radius: 20px 0px 0px 20px;
+  border-radius: 18px 0px 0px 18px;
 }
-.annonce > .annoncesPopulaires{
-    max-height: 150px;
-}
-
-
 .description{
   display: flex;
   flex-direction: column;
-  align-content: space-between;
-  max-width: 200px;
-  padding: 0px 17px 17px 17px;
-  max-height: 100%;
+  width: 200px;
+  padding-bottom: 17px;
+  flex-wrap: wrap;
 }
-
 #hebergement .annonce{
     padding: 5px;
     background: #FFFF;
     border-radius: 20px;
-    min-width: 100%;
-    min-height: 100%;
-}
-.hebergement .stars{
-  display : flex;
-  flex-direction: row;
-  width: 68px;
-  align-items: baseline;
-  padding-left: 17px;
-  padding-bottom: 17px;
-}
-/* .annoncesPopulaires .description{
-  display: flex;
-  flex-direction: column;
-  align-content: space-between;
-  max-width: 200px;
-  padding: 0px 17px 17px 17px;
-  max-height: 100%;
-}*/
-.annoncesPopulaires .stars{
-  display : flex;
-  flex-direction: row;
-  width: 68px;
-  align-items: baseline;
-  /* padding-left: 17px;
-  padding-bottom: 17px; */
 }
 .headPop{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  /* margin-bottom: 30px; */
 }
 
 .annoncesLogement{
@@ -285,18 +292,39 @@ div .filters, div .filters>div{
   margin-bottom: 30px;
   grid-gap: 30px;
 }
-.annoncesLogement > .annonce{
-  max-height: auto;
-  min-width: 150px;
-  max-width: 300px;
+.annoncesLogement .annonce{
+  height: 210px;
+  width: 310px;
 }
-.annoncesPopulaires > .annonce{
+.annoncesLogement .description{
+  height: 30px;
+  line-height: 5px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  padding-top : 5px;
+  padding-left: 17px;
+}
+.annoncesLogement .stars{
+  display : flex;
+  flex-direction: row;
+  width: 68px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+/*annonces populaires*/
+aside{
+  width: 420px;
+}
+.annoncesPopulaires .annonce{
   display: grid;
   grid-template-columns: 40% 60%;
   grid-auto-rows: 80% 20%;
   margin-bottom: 30px;
   width: 100%;
   max-height: 145px;
+  grid-column-gap: 17px;
 }
 .annoncesPopulaires img{
   grid-column-start: 1;
@@ -316,19 +344,13 @@ div .filters, div .filters>div{
   grid-row-start: 2;
   grid-row-end: 3;
   position: relative;
-  bottom: 17px;
+  display : flex;
+  flex-direction: row;
+  width: 68px;
+  align-items: center;
 }
 
-/* div.annoncesPopulaires{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-flow: wrap;
-  align-content: space-around;
-} */
-
 /*activités*/
-
 div.annoncesActivites{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -391,10 +413,7 @@ div.annoncesActivites{
   margin: 6%;
 }
 
-#activites{
-  width: 100%;
-  margin-bottom: 60px;
-}
+
 #activites img{
   border-radius: 20px 20px 0px 0px;
   object-fit: cover;
