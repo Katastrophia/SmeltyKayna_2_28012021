@@ -45,13 +45,7 @@ a, a:visited{
 a:hover{
   cursor: pointer;
 }
-header{
-  margin : 1px auto;
-  max-width : 1440px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
+
 #logo{
   width: 130px;
   height: auto;
@@ -61,13 +55,30 @@ header{
   left: 50px;
 }
 
+
+header{
+  margin : 1px auto;
+  max-width : 1440px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: flex-end;
+}
+
+
+#active{
+  border-top: 3px solid #0065FC;
+}
+
+
+
 nav a:after{
   text-decoration: none;
 }
 #suscribe{
-
   font-weight: bold;
   color: #0065FC;
+
 }
 body{
   margin : 0 auto;
@@ -103,6 +114,7 @@ div .annonce{
 
 nav{
   width: 450px;
+  padding-top: 40px;
 }
 nav ul{
   display: flex;
@@ -124,10 +136,6 @@ header a:hover{
   margin-top: 0px;
   padding-top: 40px;
 }
-
-/* header img{
-  width : 150px;
-} */
 
 /*SECTION FORM*/
 div .info{
@@ -266,7 +274,11 @@ div .filters, div .filters>div{
 #hebergement h2{
   font-size: 16px;
 }
-
+.result{
+  display:grid;
+  grid-template-columns: 2fr 1fr;
+  grid-column-gap: 40px;
+}
 .annoncesLogement img{
   width: 100%;
   height: 200px;
@@ -295,7 +307,18 @@ div .filters, div .filters>div{
   justify-content: space-between;
   align-items: center;
 }
+.annoncesLogement{
+  display : grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 30px;
+  grid-gap: 30px;
+}
 
+.hebergement, .annoncesPopulaires{
+  padding: 40px 40px;
+  background-color: #F2F2F2;
+  border-radius: 20px;
+}
 
 .annoncesLogement .annonce{
   height: 210px;
@@ -455,37 +478,23 @@ footer a{
 footer li{
   margin-bottom: 10px;
 }
-/*Tablette et pc*/
-@media (min-width:769px){
-  header{
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-  }
-  nav ul li{
-    padding-top: 40px;
-  }
-  #active{
-    border-top: 3px solid #0065FC;
-  }
+/*Tablette et pc entre 769 et 1024*/
+@media (min-width:769px) and (max-width:1024px){
+
   .annoncesLogement{
     display : grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 30px;
     grid-gap: 30px;
   }
-  .result{
-    display:grid;
-    grid-template-columns : 2fr 1fr;
-    grid-column-gap : 40px;
-  }
+
   .hebergement, .annoncesPopulaires{
     padding: 40px 40px;
     background-color: #F2F2F2;
     border-radius: 20px;
   }
 }
-/*MEDIA Queries ---- taille mobile sous 768px ()*/
+/*MEDIA Queries ---- taille MOBILE sous 768px ()*/
 
 @media (max-width:768px){
   body{
@@ -507,7 +516,9 @@ footer li{
     width: 100%;
     padding: 0px;
     }
-
+    nav{
+      padding-top : 0px;
+    }
     nav ul{
       display: flex;
       width: 100%;
@@ -531,7 +542,9 @@ footer li{
       width: 100%;
       text-align: center;
     }
-
+    #active{
+      border-top: none;
+    }
     nav ul li:first-child{
       border-bottom: 3px solid #0065FC;
       padding-bottom: 20px;
