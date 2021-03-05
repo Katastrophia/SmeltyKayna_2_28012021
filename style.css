@@ -2,7 +2,7 @@
   border : 1px solid red;
 }
 
-header{
+header {
 border : 1px solid black;
 }
  ---------------------
@@ -480,8 +480,17 @@ footer a{
 footer li{
   margin-bottom: 10px;
 }
-/*TABLETTE entre 769 et 1024*/
-@media (min-width:769px) and (max-width:1024px){
+/*Ajustement GRAND ECRAN*/
+@media (min-width:1500px){
+  #logo{
+    position:static;
+  }
+  header{
+    justify-content: space-between;
+  }
+}
+/*TABLETTE entre 769 et 1024 TABLETTE*/
+@media (min-width:850px) and (max-width:1024px){
 
   .body{
     width: 100%;
@@ -499,7 +508,7 @@ footer li{
       width: 100%;
     }
   .annoncesPopulaires{
-    background-color: white;
+    background-color: #F2F2F2;
     height: 250px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -561,7 +570,7 @@ footer li{
 }
 /*MEDIA Queries ---- taille MOBILE sous 768px ()*/
 
-@media (max-width:768px){
+@media (max-width:850px){
   body{
     margin : 0 auto;
     max-width : 1440px;
