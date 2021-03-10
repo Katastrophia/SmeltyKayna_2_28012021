@@ -1,52 +1,43 @@
-/*nav {
-  border : 1px solid red;
-}
-
-header {
-border : 1px solid black;
-}
- ---------------------
-
+/*
 bleu : #0065FC
 clair : #DEEBFF
 gris : #F2F2F2
-
-   ------------------------*/
-
+*/
 
 /*GENERAL*/
-*{
+* {
   font-family: 'Raleway', sans-serif;
 }
-h1{
+h1, div.titre {
   font-size: 22px;
   font-weight: 800;
 }
-h2{
+div.titre {
+  margin: 15px 0px;
+}
+h2 {
   font-size: 18px;
 }
-
-label{
+label {
   font-size: 18px;
   font-weight: bold;
   cursor: pointer;
 }
-h3{
+h3 {
   font-size: 13px;
   font-weight: 500;
 }
-li{
+li {
   list-style-type: none;
-  }
-a, a:visited{
+}
+a, a:visited {
   text-decoration: none;
   color: inherit;
 }
-a:hover{
+a:hover {
   cursor: pointer;
 }
-
-#logo{
+#logo {
   width: 130px;
   height: auto;
   padding: 30px 20px 20px 0px;
@@ -54,9 +45,7 @@ a:hover{
   top: 0px;
   left: 50px;
 }
-
-
-header{
+header {
   margin : 1px auto;
   max-width : 1920px;
   display: flex;
@@ -64,96 +53,87 @@ header{
   align-content: center;
   justify-content: flex-end;
 }
-
-
-#active{
+#active {
   border-top: 3px solid #0065FC;
 }
-
-
-
-nav a:after{
+nav a:after {
   text-decoration: none;
 }
-#suscribe{
+#suscribe {
   font-weight: bold;
   color: #0065FC;
-
 }
-body{
+body {
   margin : 0 auto;
   max-width : 1920px;
   padding: 0px 50px;
-  }
-#activites{
-    max-width: 1920px;
-    min-width: 100%;
-    margin-bottom: 60px;
-  }
-#hebergement{
+}
+#activites {
+  max-width: 1920px;
+  min-width: 100%;
+  margin-bottom: 60px;
+}
+#hebergement {
   max-width: 1920px;
 }
-body h2{
+body h2 {
   font-weight: bold;
 }
-div .annonce{
-   box-shadow: 1px 1px 6px #ccc;
-  }
-.annonce:hover{
+div .annonce {
+  box-shadow: 1px 1px 6px #ccc;
+}
+.annonce:hover {
   cursor: pointer;
 }
-
-*.fas:not(#logoLocalisation, #logoArrow, .grey){
-    color : #0065FC;
+*.fas:not(#logoLocalisation, #logoArrow, .grey) {
+  color : #0065FC;
 }
-.grey{
+.grey {
   color: #F2F2F2;
 }
-::placeholder{
+::placeholder {
   color: black;
   font-weight: 700;
   font-size: 18px;
 }
 /*HEADER*/
-
-nav{
+nav {
   width: 450px;
   padding-top: 40px;
 }
-nav ul{
+nav ul {
   display: flex;
   width: 420px;
   padding-right: 20px;
   justify-content: flex-end;
   align-items: center;
 }
-nav a{
+nav a {
   font-size: 18px;
   padding-left : 28px;
   padding-right: 28px;
 }
-header a:hover{
+header a:hover {
   color : blue;
 }
-#active{
+#active {
   color: #0065FC;
   margin-top: 0px;
   padding-top: 40px;
 }
-
 /*SECTION FORM*/
-div .info{
+div .info {
   display : flex;
 }
-form a:hover{
+form a:hover {
   width: 10%;
   cursor: pointer;
 }
-form{
+form {
   margin-top: 20px;
   margin-bottom: 30px;
 }
-.formBar{
+.formBar {
   border : 1px solid  #F2F2F2;
   border-radius: 10px;
   max-width: 400px;
@@ -163,8 +143,7 @@ form{
   grid-template-columns: 12% 55% 33%;
   grid-row: 1;
 }
-
-.bidule{
+.bidule {
   background-color: #F2F2F2;
   display: flex;
   justify-content: center;
@@ -172,7 +151,7 @@ form{
   min-height: 100%;
   border-radius: 10px 0px 0px 10px;
 }
-.button{
+.button {
   border: 2px solid #F2F2F2;
   border-left: none;
   height: 48px;
@@ -182,7 +161,7 @@ form{
   padding-right: 15px;
   margin-top: 15px;
 }
-.rondBleu{
+.rondBleu {
   display: flex;
   width: 50px;
   height: 50px;
@@ -192,64 +171,61 @@ form{
   justify-content: space-around;
   padding-left: 0px;
 }
-.button:hover{
+.button:hover {
   transform: scale(1.05);
   cursor: pointer;
 }
-
-.place{
+.place {
   margin: center;
   display: flex;
   justify-content: center;
 }
-.search{
+.search {
   min-height: 100%;
   background-color: #0065FC;
   display: flex;
   justify-content: center;
   border-radius: 0px 10px 10px 0px;
 }
-.text{
+.text {
   display: flex;
   flex-direction: column;
   border: none;
   margin: 0;
   padding-right: 10px;
 }
-.text h3, .text h2{
+.text h3, .text h2 {
   margin-top: 5px;
   margin-bottom: 10px;
 }
-
-.submit{
+.submit {
   border: none;
   background-color: #0065FC;
   color: white;
   font-size: 16px;
   font-weight: bold;
 }
-
-#logoLocalisation, #logoArrow{
+#logoLocalisation, #logoArrow {
   color: #000000;
 }
-div .filters, div .filters>div{
+div .filters, div .filters>div {
   display: flex;
   flex-direction : row;
 }
-.filters div{
+.filters div {
   display: flex;
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
 }
-.buttons{
+.buttons {
   flex-wrap: wrap;
 }
-.buttons > div{
+.buttons > div {
   border-color: 1px solid silver;
   border-radius: 50px;
 }
-.info{
+.info {
   display: flex;
   width: 500px;
   display: flex;
@@ -257,7 +233,7 @@ div .filters, div .filters>div{
   margin-top: 35px;
   margin-bottom: 35px;
 }
-.rondInfo{
+.rondInfo {
   display: flex;
   width: 26px;
   height: 26px;
@@ -268,67 +244,63 @@ div .filters, div .filters>div{
   margin-right: 12px;
 }
 /*SECTION RESULT*/
-
-.result img{
+.result img {
   max-height: 145px;
   object-fit: cover;
 }
-#hebergement h2{
+#hebergement h2 {
   font-size: 15px;
 }
-.result{
+.result {
   display:grid;
   grid-template-columns: 2fr 1fr;
   grid-column-gap: 40px;
 }
-.annoncesLogement img{
+.annoncesLogement img {
   width: 100%;
   height: 200px;
   border-radius: 18px 18px 0px 0px;
 }
-.annoncesPopulaires img{
+.annoncesPopulaires img {
   width: 100%;
   min-height: 150px;
   max-height: 154px;
   border-radius: 18px 0px 0px 18px;
 }
-.description{
+.description {
   display: flex;
   flex-direction: column;
   width: 100%;
   flex-wrap: wrap;
 }
-#hebergement .annonce{
-    padding: 5px;
-    background: #FFFF;
-    border-radius: 20px;
+#hebergement .annonce {
+  padding: 5px;
+  background: #FFFF;
+  border-radius: 20px;
 }
-.headPop{
+.headPop {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-.annoncesLogement{
+.annoncesLogement {
   display : grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin-bottom: 60px;
   grid-gap: 30px;
 }
-
-.hebergement, .annoncesPopulaires{
+.hebergement, .annoncesPopulaires {
   padding: 40px 40px;
   background-color: #F2F2F2;
   border-radius: 20px;
 }
-
-.annoncesLogement .annonce{
+.annoncesLogement .annonce {
   min-height: 233px;
   min-width: 176px;
 }
-.annoncesLogement .description{
+.annoncesLogement .description {
   height: 30px;
-  /* line-height: 5px; */
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -336,19 +308,18 @@ div .filters, div .filters>div{
   padding-top : 5px;
   padding-left: 10px;
 }
-.annoncesLogement .stars{
+.annoncesLogement .stars {
   display : flex;
   flex-direction: row;
   width: 68px;
   align-items: center;
   margin-bottom: 10px;
 }
-#hebergement a{
+#hebergement a {
   font-weight: bold;
 }
 /*annonces populaires*/
-
-.annoncesPopulaires .annonce{
+.annoncesPopulaires .annonce {
   display: grid;
   grid-template-columns: 40% 60%;
   grid-auto-rows: 80% 20%;
@@ -358,20 +329,20 @@ div .filters, div .filters>div{
   min-height: 145px;
   grid-column-gap: 14px;
 }
-.annoncesPopulaires img{
+.annoncesPopulaires img {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 3;
 }
-.annoncesPopulaires .description{
+.annoncesPopulaires .description {
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2;
   padding-top: 10px;
 }
-.annoncesPopulaires .stars{
+.annoncesPopulaires .stars {
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 2;
@@ -382,15 +353,14 @@ div .filters, div .filters>div{
   width: 68px;
   align-items: center;
 }
-
 /*activités*/
-div.annoncesActivites{
+div.annoncesActivites {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: 190px 40px 40px 165px;
   grid-column-gap: 40px;
 }
-.annoncesActivites > .annonce{
+.annoncesActivites > .annonce {
   overflow:hidden;
   background: #FFFF;
   border-radius: 20px;
@@ -400,151 +370,146 @@ div.annoncesActivites{
   align-items: center;
   height: auto;
 }
-.annonce1{
+.annonce1 {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 5;
 }
-.annonce2{
+.annonce2 {
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 3;
 }
-.annonce3{
+.annonce3 {
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 4;
   grid-row-end: 5;
 }
-.annonce4{
+.annonce4 {
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 5;
 }
-.annonce5{
+.annonce5 {
   grid-column-start: 4;
   grid-column-end: 5;
   grid-row-start: 1;
   grid-row-end: 2;
 }
-.annonce6{
+.annonce6 {
   grid-column-start: 4;
   grid-column-end: 5;
   grid-row-start: 3;
   grid-row-end: 5;
 }
-.descriptionActivite{
+.descriptionActivite {
   width: 100%;
   height: auto;
 }
-.descriptionActivite h2{
+.descriptionActivite h2 {
   margin: 6%;
 }
-
-#activites img{
+#activites img {
   border-radius: 20px 20px 0px 0px;
   object-fit: cover;
 }
-.large{
+.large {
   max-height: 370px;
   width: auto;
 }
-.small{
+.small {
   max-height: 68%;
   width: 100%;
 }
-.descriptionActivite{
+.descriptionActivite {
   height: 60px;
 }
-
 /*FOOTER*/
-footer{
+footer {
   display: flex;
   background-color: #F2F2F2;
 }
-footer div{
+footer div {
   display: grid;
   justify-content: flex-start;
   width : 33%;
 }
-footer h2{
+footer h2 {
   margin-bottom: 20px;
 }
-footer a{
+footer a {
   font-size: 16px;
   text-transform: none;
 }
-footer li{
+footer li {
   margin-bottom: 10px;
 }
 /*Ajustement GRAND ECRAN*/
-@media (min-width:1500px){
-  #logo{
+@media (min-width:1500px) {
+  #logo {
     position:static;
   }
-  header{
+  header {
     justify-content: space-between;
   }
 }
 /*TABLETTE entre 769 et 1024 TABLETTE*/
-@media (min-width:850px) and (max-width:1024px){
-
-  .body{
+@media (min-width:850px) and (max-width:1024px) {
+  .body {
     width: 100%;
   }
-  #hebergement{
+  #hebergement {
     max-width: 100%;
     background-color: white;
-
   }
-  .result{
+  .result {
     display: flex;
     flex-direction: column-reverse;
-    }
-  aside{
-      width: 100%;
-    }
-  .annoncesPopulaires{
+  }
+  aside {
+    width: 100%;
+  }
+  .annoncesPopulaires {
     background-color: #F2F2F2;
     height: 250px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 20% 80%;
     grid-gap: 2%;
-}
-  .annoncesPopulaires img{
+  }
+  .annoncesPopulaires img {
     min-height: 160px;
   }
-  .headPop{
+  .headPop {
     grid-column-start: 1;
     grid-row-start: 1;
     grid-column-end: 4;
     grid-row-end: 2
   }
-
-  .annoncesPopulaires .annonce{
+  .annoncesPopulaires .annonce {
     align-self: flex-end;
     height: 160px;
     padding-right: 10px;
   }
-  .annoncesLogement{
+  .annoncesLogement {
     display : grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 30px;
     grid-gap: 20px;
   }
-  .hebergement{
-  background-color: white;
+  .hebergement {
+    background-color: white;
   }
-  .hebergement, .annoncesPopulaires{
+  .hebergement, .annoncesPopulaires {
     padding: 40px 40px;
     border-radius: 20px;
   }
-  /*activités TABLETTE----------*/
-  #activites h2{
+  /*activités TABLETTE*/
+  #activites h2 {
     font-size: 16px;
   }
   div.annoncesActivites {
@@ -553,140 +518,136 @@ footer li{
     grid-auto-rows: 122px 18px 17px 102px;
     grid-column-gap: 20px;
   }
-  .annoncesActivites .annonce{
+  .annoncesActivites .annonce {
     width: auto;
     height: 100%;
     padding: 0px;
   }
-  .large{
+  .large {
     max-height: 75%;
     width: auto;
   }
-  .small{
+  .small {
     max-height: 55%;
     width: 100%;
   }
-
 }
 /*MEDIA Queries ---- taille MOBILE sous 768px ()*/
-
-@media (max-width:850px){
-  body{
+@media (max-width:850px) {
+  body {
     margin : 0 auto;
     max-width : 1440px;
     padding: 0px 0px;
-    }
-  footer, header{
+  }
+  footer, header {
     flex-direction: column;
   }
-
-  header{
+  header {
     padding-top: 50px;
   }
-
-  header nav{
+  header nav {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     padding: 0px;
-    }
-    nav{
-      padding-top : 0px;
-    }
-    nav ul{
-      display: flex;
-      width: 100%;
-      padding: 0px;
-    }
-    nav ul li:last-child{
-      order: 1;
-      border-bottom: none;
-      position: absolute;
-      top: 57px;
-      right: 0px;
-      padding-bottom: 0px;
-    }
-    nav ul li{
-      border-bottom: 3px solid #F2F2F2;
-      padding-bottom: 20px;
-      padding-right: 0px;
-    }
-    nav ul li:not(:last-child){
-      margin-top: 50px;
-      width: 100%;
-      text-align: center;
-    }
-    #active{
-      border-top: none;
-    }
-    nav ul li:first-child{
-      border-bottom: 3px solid #0065FC;
-      padding-bottom: 20px;
-      width: 100%;
-    }
-    #suscribe{
-      display:flex;
-      justify-content: flex-end;
-      width: auto;
-      font-weight: bold;
-      color: #0065FC;
-    }
-    #formulaire{
-      padding: 10px 20px 10px 20px;
-    }
-    .result{
-      display: flex;
-      flex-direction: column-reverse;
-      }
-    #hebergement{
-      width: 100%;
-      background-color: white;
-      padding: 0px;
-    }
-    .annoncesLogement, aside, .annoncesPopulaires, .hebergement, div.annoncesActivites{
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      border-radius: 0px;
-      }
-    .annoncesLogement .annonce{
-      padding: 15px 30px;
-      margin-bottom: 20px;
-      width: 100%;
-    }
-    .hebergement{
-      padding: 40px 40px;
-      background-color: white;
-    }
-    .annoncesPopulaires{
-      padding: 20px 40px;
-      background-color: #F2F2F2;
-    }
-    aside{
-      width: auto;
-      border-radius: 0px;
-    }
-    .annoncesPopulaires .annonce{
-      margin-bottom: 20px;
   }
-    #activites{
-      max-width: 768px;
-      min-width: 148px;
-      padding: 15px;
-      margin: 20px;
+  nav {
+    padding-top : 0px;
+  }
+  nav ul {
+    display: flex;
+    width: 100%;
+    padding: 0px;
+  }
+  nav ul li:last-child {
+    order: 1;
+    border-bottom: none;
+    position: absolute;
+    top: 57px;
+    right: 0px;
+    padding-bottom: 0px;
+  }
+  nav ul li {
+    border-bottom: 3px solid #F2F2F2;
+    padding-bottom: 20px;
+    padding-right: 0px;
+  }
+  nav ul li:not(:last-child) {
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+  }
+  #active {
+    border-top: none;
+  }
+  nav ul li:first-child {
+    border-bottom: 3px solid #0065FC;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+  #suscribe {
+    display:flex;
+    justify-content: flex-end;
+    width: auto;
+    font-weight: bold;
+    color: #0065FC;
+  }
+  #formulaire {
+    padding: 10px 20px 10px 20px;
+  }
+  .result {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #hebergement {
+    width: 100%;
+    background-color: white;
+    padding: 0px;
+  }
+  .annoncesLogement, aside, .annoncesPopulaires, .hebergement, div.annoncesActivites {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 0px;
     }
-    .annoncesActivites{
-      width: 100%;
-    }
-    .annoncesActivites .annonce{
-      width: 100%;
-      margin-bottom: 20px;
-      padding-bottom: 30px;
-    }
-    div.annoncesActivites .annonce img{
-      max-height: 145px;
-    }
-    div.annoncesActivites .annonce img.large{
-      width: 100%;
-    }
+  .annoncesLogement .annonce {
+    padding: 15px 30px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .hebergement {
+    padding: 40px 40px;
+    background-color: white;
+  }
+  .annoncesPopulaires {
+    padding: 20px 40px;
+    background-color: #F2F2F2;
+  }
+  aside {
+    width: auto;
+    border-radius: 0px;
+  }
+  .annoncesPopulaires .annonce {
+    margin-bottom: 20px;
+  }
+  #activites {
+    max-width: 768px;
+    min-width: 148px;
+    padding: 15px;
+    margin: 20px;
+  }
+  .annoncesActivites {
+    width: 100%;
+  }
+  .annoncesActivites .annonce {
+    width: 100%;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+  }
+  div.annoncesActivites .annonce img {
+    max-height: 145px;
+  }
+  div.annoncesActivites .annonce img.large {
+    width: 100%;
+  }
 }
