@@ -85,7 +85,7 @@ div .annonce {
 .annonce:hover {
   cursor: pointer;
 }
-*.fas:not(#logoLocalisation, #logoArrow, .grey) {
+*.fas:not(#logoLocalisation):not(#logoArrow):not(.grey) {
   color : #0065FC;
 }
 .grey {
@@ -176,7 +176,6 @@ form {
   cursor: pointer;
 }
 .place {
-  margin: center;
   display: flex;
   justify-content: center;
 }
@@ -211,6 +210,7 @@ form {
 div .filters, div .filters>div {
   display: flex;
   flex-direction : row;
+  align-items: center;
 }
 .filters div {
   display: flex;
@@ -222,7 +222,6 @@ div .filters, div .filters>div {
   flex-wrap: wrap;
 }
 .buttons > div {
-  border-color: 1px solid silver;
   border-radius: 50px;
 }
 .info {
