@@ -226,7 +226,6 @@ div .filters, div .filters>div {
 }
 .info {
   display: flex;
-  width: 500px;
   display: flex;
   align-items: center;
   margin-top: 35px;
